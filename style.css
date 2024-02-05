@@ -19,7 +19,7 @@ html {
 
 /* style */
 * {
-
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   margin: 0;
   padding: 0;
   /* color:white; */
@@ -63,8 +63,8 @@ html {
   justify-content: center;
   background-color: var(--color-4);
   color: var(--color-5);
-
-
+/* padding-bottom: 50px;
+margin-bottom: 0px; */
 }
 
 .sl {
@@ -85,12 +85,16 @@ html {
 
 .sr {
   width: 50%;
+  margin-bottom: 0px;
+  /* padding-bottom: 50px; */
+  
 
 }
 
 .sr img {
   position: relative;
   top: 120px;
+  z-index: 25;
   left: 300px;
 }
 
@@ -266,7 +270,7 @@ html {
 
 }
 
-@media screen and (max-width:900px) {
+@media screen and (max-width:1009px) {
 
   .sl {
     top: 100px;
@@ -278,20 +282,30 @@ html {
     top: 120px;
     left: -100px;
   }
-
+.l{
+  
+  /* position: absolute;
+  /* padding-top: 900px; */
+  /* background-color: green;
+  top: 100px;
+  color: red;  */
+}
   .sec2 {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 700px;
+    /* flex-direction: column; */
+    /* align-items: center; */
+    flex-wrap: wrap;
+    padding-top: 50px;
     padding-bottom: 100px;
   }
 
   .sec3 h1 {
+    height: 25vh;
     padding: 50px;
     position: relative;
-    top: 100px;
+    /* top: 100px; */
     padding-bottom: 50px;
+    /* margin: auto; */
   }
 
   .sec3 {
@@ -301,18 +315,21 @@ html {
   .pcard-s1 {
     padding-top: 50px;
     display: flex;
-    flex-direction: column;
-    justify-items: center;
+    /* flex-direction: column; */
+    /* justify-items: center; */
     align-items: center;
+    flex-wrap: wrap;
     margin-bottom: 30px;
     gap: 40px;
   }
 
   .pcard-s2 {
+    padding-top: 50px;
     display: flex;
-    flex-direction: column;
-    justify-items: center;
+    /* flex-direction: column; */
+    /* justify-items: center; */
     align-items: center;
+    flex-wrap: wrap;
     margin-bottom: 30px;
     gap: 40px;
   }
@@ -361,6 +378,15 @@ html {
 
 }
 
+@media screen and (max-width:700px) {
+  .sec3 h1 {
+    position: relative;
+    top: 250px;
+    /* color: red; */
+    padding: 50px;
+  }
+}
+
 @keyframes sl1 {
   from {
     left: -30px;
@@ -389,4 +415,13 @@ html {
   to {
     top: 50px;
   }
+}
+
+.langik{
+  color: white;
+  background-color: var(--color-4);
+  text-align: center;
+  font-size: 45px;
+  /* margin-top: 100px; */
+  padding-top: 200px;
 }
