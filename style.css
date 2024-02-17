@@ -269,10 +269,12 @@ margin-bottom: 0px; */
 
 
 }
-
+/*media*/
 @media screen and (max-width:600px) {
 
+
   .sl {
+ 
     top: 100px;
     z-index: 20
   }
