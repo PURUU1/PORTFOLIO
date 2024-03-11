@@ -262,12 +262,14 @@ margin-bottom: 0px; */
 }
 
 .social {
-
+ margin-bottom:100px;
   border-radius: 50%;
+  position:relative;
+top:-125px;
 }
 
 .social svg {
-  widht: 100px;
+  width: 100px;
   height: 100px;
 
 
