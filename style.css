@@ -3,9 +3,8 @@ html {
   width: 100%;
   scroll-behavior: smooth;
 }
-body{
-  overflow:hidden;
-}
+
+body {}
 
 /* #EEF5FF
 #B4D4FF
@@ -20,12 +19,19 @@ body{
 
 }
 
+.container {
+  height: 100%;
+  background-color: var(--color-4);
+  width: 100%;
+  overflow-x: hidden;
+}
+
 /* style */
 * {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   margin: 0;
   padding: 0;
- 
+
 
 }
 
@@ -35,11 +41,11 @@ body{
   -webkit-box-shadow: 21px 19px 60px -1px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 21px 19px 60px -1px rgba(0, 0, 0, 0.75);
   box-shadow: 21px 19px 60px -1px rgba(0, 0, 0, 0.75);
-
+  position: fixed;
   z-index: 50;
   background-color: var(--color-2);
 
-  position: fixed;
+  position: ;
   width: 100vw;
 
   height: 50px;
@@ -66,7 +72,7 @@ body{
   justify-content: center;
   background-color: var(--color-4);
   color: var(--color-5);
-/* padding-bottom: 50px;
+  /* padding-bottom: 50px;
 margin-bottom: 0px; */
 }
 
@@ -90,7 +96,7 @@ margin-bottom: 0px; */
   width: 50%;
   margin-bottom: 0px;
   /* padding-bottom: 50px; */
-  
+
 
 }
 
@@ -98,7 +104,7 @@ margin-bottom: 0px; */
   position: relative;
   top: 120px;
   z-index: 25;
-  left: 300px;
+  left: px;
 }
 
 /* sec2 */
@@ -118,8 +124,8 @@ margin-bottom: 0px; */
 }
 
 .card {
-  width: 350px;
-  height: 420px;
+  width: 174px;
+  height: 294px;
   border: 2px solid black;
   border-radius: 25px;
   background-color: white;
@@ -170,12 +176,14 @@ margin-bottom: 0px; */
 }
 
 .pcard {
+  margin-block: 20px;
+  margin-inline: 8px;
   background-color: var(--color-5);
 
   border: 2px solid black;
   border-radius: 25px;
-  width: 400px;
-  height: 600px;
+  width: 385px;
+  height: 518px;
   overflow: hidden;
   padding-bottom: 50px;
 }
@@ -256,16 +264,16 @@ margin-bottom: 0px; */
   justify-content: space-evenly;
   align-items: center;
 
-  margin-bottom: 50px;
+  margin-bottom: ;
   background-color: var(--color-4);
 
 }
 
 .social {
- margin-bottom:100px;
+  margin-bottom: 50px;
   border-radius: 50%;
-  position:relative;
-top:-125px;
+  position: relative;
+  top: ;
 }
 
 .social svg {
@@ -274,29 +282,32 @@ top:-125px;
 
 
 }
+
 /*media*/
 @media screen and (max-width:600px) {
 
 
   .sl {
- 
+
     top: 100px;
     z-index: 20
   }
 
   .sr img {
-
+    z-index: 0;
     top: 120px;
     left: -100px;
   }
-.l{
-  
-  /* position: absolute;
+
+  .l {
+
+    /* position: absolute;
   /* padding-top: 900px; */
-  /* background-color: green;
+    /* background-color: green;
   top: 100px;
   color: red;  */
-}
+  }
+
   .sec2 {
     display: flex;
     /* flex-direction: column; */
@@ -316,7 +327,7 @@ top:-125px;
   }
 
   .sec3 {
-    padding-top: 400px;
+    padding-top: 100px;
   }
 
   .pcard-s1 {
@@ -361,7 +372,8 @@ top:-125px;
 }
 
 .pcard:hover {
-   scale: 1.1;;
+  scale: 1.1;
+  ;
 }
 
 .navbar a {
@@ -386,12 +398,32 @@ top:-125px;
 
 }
 
-@media screen and (max-width:700) {
+@media screen and (max-width:800px) {
   .sec3 h1 {
+    background-color: ;
     position: relative;
-    top: 250px;
+    top: -0px;
     /* color: red; */
     padding: 50px;
+  }
+
+  .pcard {
+    width: 200px;
+    height: 300px;
+  }
+
+  .pcard img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .sec2 {
+    flex-wrap: wrap;
+  }
+
+  .card {
+    width: 200px;
+    height: 300px;
   }
 }
 
@@ -425,7 +457,7 @@ top:-125px;
   }
 }
 
-.langik{
+.langik {
   color: white;
   background-color: var(--color-4);
   text-align: center;
@@ -433,9 +465,14 @@ top:-125px;
   /* margin-top: 100px; */
   padding-top: 50px;
 }
-#more{
-  text-align:center;
-font-size:3rem;
-margin:25px;
-  color:white;
+
+#more {
+  text-align: center;
+  font-size: 3rem;
+  margin: 25px;
+  color: white;
+}
+
+.card img {
+  overflow: hidden;
 }
